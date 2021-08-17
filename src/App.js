@@ -11,6 +11,8 @@ function App() {
     display: "flex",
     flexDirection: "column",
     margin: "15px",
+    height: "25vh",
+    justifyContent: "space-around",
   };
 
   const getData = () => {
@@ -38,7 +40,7 @@ function App() {
           data.assets.map((c) => {
             return (
               <div id={c.token_id} style={divStyle}>
-                <img src={c.collection.featured_image_url} alt="" />
+                <img src={c.collection.featured_image_url} height="100%" alt="" />
                 <span>{c.collection.name}</span>
               </div>
             );
