@@ -11,8 +11,10 @@ function App() {
     display: "flex",
     flexDirection: "column",
     margin: "15px",
-    height: "25vh",
+    maxWidth: "25vh",
+    height: "auto",
     justifyContent: "space-around",
+    position: "reletive",
   };
 
   // const url = "https://api.opensea.io/api/v1/assets?owner=0x00056a746ccc5bc2fb05b4c1e6e274b8d1816739&order_direction=desc&offset=0&limit=20"
@@ -42,7 +44,12 @@ function App() {
             return (
               <div id={c.token_id} style={divStyle}>
                 <a href={c.permalink}>
-                  <img src={c.image_preview_url} height="100%" alt="" />
+                  <img
+                    src={c.image_preview_url}
+                    height="100%"
+                    width="100%"
+                    alt=""
+                  />
                 </a>
                 <span>{c.name}</span>
               </div>
