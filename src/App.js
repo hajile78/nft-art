@@ -7,11 +7,11 @@ const options = { method: "GET" };
 function App() {
   const [data, setData] = useState([]);
 
-  const divStyle = { 
-    display: "flex", 
+  const divStyle = {
+    display: "flex",
     flexDirection: "column",
-    margin: '15px'
-  }
+    margin: "15px",
+  };
 
   const getData = () => {
     fetch(
@@ -33,18 +33,17 @@ function App() {
       <header className="App-header">
         <p>NFT Art of Talented Artists</p>
       </header>
-      <main className="App-main" >
+      <main className="App-main">
         {data.assets &&
           data.assets.map((c) => {
             return (
               <div id={c.token_id} style={divStyle}>
-                <img src={c.collection.featured_image_url} />
+                <img src={c.collection.featured_image_url} alt="" />
                 <span>{c.collection.name}</span>
               </div>
             );
           })}
-        </main>
-      
+      </main>
     </div>
   );
 }
