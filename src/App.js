@@ -17,9 +17,10 @@ function App() {
     position: "reletive",
   };
 
-  // const url = "https://api.opensea.io/api/v1/assets?owner=0x00056a746ccc5bc2fb05b4c1e6e274b8d1816739&order_direction=desc&offset=0&limit=20"
   const url =
-    "https://api.opensea.io/api/v1/assets?order_direction=desc&offset=0&limit=20";
+    "https://api.opensea.io/api/v1/assets?owner=0x0704136a21b94e6bbfcc5c9c09b0db243320f558&order_direction=desc&offset=0&limit=50";
+  //const url =
+  //  "https://api.opensea.io/api/v1/asset?owner=0x0704136a21b94e6bbfcc5c9c09b0db243320f558&offset=0&limit=300";
 
   const getData = () => {
     fetch(url, options)
