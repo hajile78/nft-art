@@ -15,7 +15,6 @@ function App() {
     margin: "15px",
     width: "25vh",
     height: "25vh",
-    height: "auto",
     justifyContent: "space-around",
     position: "reletive",
   };
