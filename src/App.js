@@ -14,7 +14,6 @@ function App() {
     flexDirection: "column",
     margin: "15px",
     width: "25vh",
-    height: "25vh",
     justifyContent: "space-around",
     position: "reletive",
   };
